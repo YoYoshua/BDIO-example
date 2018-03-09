@@ -10,6 +10,6 @@ public class FibonacciController
     @RequestMapping("/fibonacci")
     public Fibonacci fibonacci(@RequestParam(value = "index", defaultValue = "0") int index)
     {
-        return new Fibonacci(int);
+        return new Fibonacci(index);
     }
 }
