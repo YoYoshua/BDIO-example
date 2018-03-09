@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class FibonacciController
 {
     @RequestMapping("/fibonacci")
-    public Fibonacci fibonacci(@RequestParam(value = "var", defaultValue = "0") String var)
+    public Fibonacci fibonacci(@RequestParam(value = "index", defaultValue = "0") int index)
     {
-        int varInt = Integer.parseInt(var);
-        return new Fibonacci(varInt);
+        return new Fibonacci(int);
     }
 }
